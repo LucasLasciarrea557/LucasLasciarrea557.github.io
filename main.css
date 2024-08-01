@@ -1,0 +1,498 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
+
+@font-face {
+    font-family: 'Qanelas';
+    src: url(/source/fonts/QanelasSoftDEMO-ExtraBold.otf);
+}
+
+@font-face {
+    font-family: 'Qanelasul';
+    src: url(/source/fonts/QanelasSoftDEMO-UltraLight.otf);
+}
+
+@font-face {
+    font-family: 'Artegra';
+    src: url(/source/fonts/Demo_Fonts/Fontspring-DEMO-artegra_sans-condensed-sc-500-medium.otf);
+}
+
+/*body */
+
+body {
+    background-color: #0c1f44;
+    width: 100%;
+}
+
+.hdr {
+    background-color: #02457A;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.icekeys {
+    font-family: 'Qanelas';
+    font-size: 50px;
+    position: fixed;
+    top: 5px;
+    left: 20%;
+    display: inline-block;
+    transition: transform 0.150s;
+}
+
+.ice {
+    color: #65cff7;
+}
+
+.keys {
+    color: #04245c;
+
+}
+
+.icekeys:hover {
+    transform: scaleX(1.2);
+}
+
+/* MENU */
+
+.menu {
+    position: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    left: 18%;
+    left: 35%;
+}
+
+.navul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navli {
+    float: left;
+    position: relative;
+}
+
+.navli a {
+    font-family: 'Qanelasul';
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 26px 40px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.navli a:hover {
+    background-color: #cde4f3;
+    color: #0c1f44;
+
+}
+
+.ick {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: -5px;
+    top: 3px;
+    opacity: 75%;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #015f85;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 100%;
+    text-align: center;
+    box-shadow: 100%;
+    box-shadow: 0px 34px 41px 20px rgba(0, 0, 0, 0.79);
+    background-image: linear-gradient(135deg, transparent 0%, transparent 17%, rgba(32, 71, 123, 0.56) 17%, rgba(32, 71, 123, 0.56) 59%, transparent 59%, transparent 64%, rgba(6, 56, 96, 0.87) 64%, rgba(6, 56, 96, 0.87) 100%), linear-gradient(45deg, transparent 0%, transparent 2%, rgba(6, 56, 96, 0.87) 2%, rgba(6, 56, 96, 0.87) 46%, rgb(39, 105, 133) 46%, rgb(39, 105, 133) 54%, transparent 54%, transparent 63%, rgb(12, 31, 68) 63%, rgb(12, 31, 68) 100%), linear-gradient(90deg, rgb(147, 147, 147), rgb(147, 147, 147));
+}
+
+footer .txt1 {
+    font-size: 20px;
+    font-family: 'Qanelas';
+    color: antiquewhite;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    font-weight: bold;
+}
+
+footer .txt2 {
+    font-size: 10px;
+    font-family: 'Lato';
+    color: antiquewhite;
+    position: absolute;
+    top: 280px;
+    right: 1478px;
+    text-align: end;
+    font-weight: bold;
+}
+
+footer .txt3 {
+    font-size: 15px;
+    font-family: 'Lato';
+    color: rgb(253, 214, 162);
+    position: relative;
+    top: 100px;
+    right: -500px;
+    text-align: end;
+}
+
+footer .txt4 {
+    font-size: 15px;
+    font-family: 'Lato';
+    color: rgb(253, 214, 162);
+    position: absolute;
+    top: 85px;
+    right: 300px;
+    text-align: end;
+    font-weight: 900;
+}
+
+footer .txt5 {
+    font-size: 15px;
+    font-family: 'Lato';
+    color: rgb(245, 238, 238);
+    position: absolute;
+    top: 85px;
+    right: 75px;
+    text-align: end;
+    font-weight: 900;
+}
+
+footer .txt6 {
+    font-size: 15px;
+    font-family: 'Lato';
+    color: rgb(253, 214, 162);
+    position: absolute;
+    top: 150px;
+    right: 279px;
+    text-align: end;
+    font-weight: 900;
+}
+
+footer .txt7 {
+    font-size: 15px;
+    font-family: 'Lato';
+    color: rgb(245, 238, 238);
+    position: absolute;
+    top: 150px;
+    right: 75px;
+    text-align: end;
+    font-weight: 900;
+}
+
+footer .txt8 {
+    font-size: 15px;
+    font-family: 'Lato';
+    color: rgb(253, 214, 162);
+    position: absolute;
+    top: 215px;
+    right: 273px;
+    text-align: end;
+    font-weight: 900;
+    ;
+}
+
+footer .txt9 {
+    font-size: 15px;
+    font-family: 'Lato';
+    color: rgb(245, 238, 238);
+    position: absolute;
+    top: 215px;
+    right: 75px;
+    text-align: end;
+    font-weight: 900;
+}
+
+footer .txt10 {
+    font-size: 20px;
+    font-family: 'Lato';
+    color: rgb(67, 170, 255);
+    position: absolute;
+    top: 85px;
+    left: 50px;
+    font-weight: 900;
+}
+
+footer .txt11 {
+    font-size: 15px;
+    font-family: 'Lato';
+    color: antiquewhite;
+    position: absolute;
+    top: 115px;
+    left: 50px;
+    font-weight: bold;
+}
+
+footer .txt12 {
+    font-size: 15px;
+    font-family: 'Lato';
+    color: antiquewhite;
+    position: absolute;
+    top: 135px;
+    left: 50px;
+    font-weight: bold;
+}
+
+footer .txt13 {
+    font-size: 15px;
+    font-family: 'Lato';
+    color: rgb(149, 200, 235);
+    position: absolute;
+    top: 135px;
+    left: 655px;
+    font-weight: bold;
+}
+
+
+/* SLIDER */
+
+.slider-frame {
+    width: 30%;
+    height: 30%;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    top: 20%;
+    user-select: none;
+    border-radius: 20px;
+    left: 20%;
+    border: 5px solid #015f85;
+}
+
+.slider-frame ul {
+    display: flex;
+    width: 400%;
+
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+    width: 100%;
+    list-style: none;
+}
+
+
+.slider-frame img {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slider-frame img:hover {
+    transform: scale(1.05);
+}
+
+@keyframes slide {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}
+
+
+/* TEXTOS */
+
+.rcm {
+    font-family: 'Artegra';
+    font-size: 25px;
+    color: #43aed4;
+    position: absolute;
+    left: 55%;
+    top: 15%;
+    z-index: -1;
+}
+
+.rcm1 {
+    font-family: 'Artegra';
+    font-size: 25px;
+    color: #43aed4;
+    position: absolute;
+    left: 20%;
+    top: 15%;
+    z-index: -1;
+}
+
+/* CARDS */
+
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+
+/* Estilos comunes para todas las tarjetas */
+
+.card, .cardfc, .cardcod, .cardds {
+    position: absolute;
+    width: 8%;
+    height: 270px;
+    background: #191919;
+    border-radius: 20px;
+    overflow: hidden;
+    font-family: 'Artegra';
+    z-index: -1;
+}
+
+.card {
+    left: 55%;
+    top: 20%;
+}
+
+.cardfc {
+    left: 63.5%;
+    top: 20%;
+}
+
+.cardcod {
+    left: 72%;
+    top: 20%;
+}
+
+.cardds {
+    left: 55%;
+    top: 54%;
+}
+
+.card::before, .cardfc::before, .cardcod::before, .cardds::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    width: 300%;
+    height: 100%;
+    background: #015f85;
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+
+.card:hover::before, .cardfc:hover::before, .cardcod:hover::before, .cardds:hover::before {
+    top: -70%;
+    transform: skewY(360deg);
+}
+
+.card::after, .cardfc::after, .cardcod::after, .cardds::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 6em;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.card .imgBox, .cardfc .imgBoxfc, .cardcod .imgBoxcod, .cardds .imgBoxds {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+}
+
+.card .imgBox img, .cardfc .imgBoxfc img, .cardcod .imgBoxcod img, .cardds .imgBoxds img {
+    max-width: 90%;
+    max-height: 90%;
+    transition: .5s;
+    border: 2px solid #1e97d4;
+    border-radius: 20px;
+}
+
+.card:hover .imgBox img, .cardfc:hover .imgBoxfc img, .cardcod:hover .imgBoxcod img, .cardds:hover .imgBoxds img {
+    max-width: 80%;
+}
+
+.card .contentBox, .cardfc .contentBoxfc, .cardcod .contentBoxcod, .cardds .contentBoxds {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+    text-align: center;
+}
+
+.card .contentBox h3, .cardfc .contentBoxfc h3, .cardcod .contentBoxcod h3, .cardds .contentBoxds h3 {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card .contentBox .price, .cardfc .contentBoxfc .pricefc, .cardcod .contentBoxcod .pricecod, .cardds .contentBoxds .priceds {
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card .contentBox .buy, .cardfc .contentBoxfc .buyfc, .cardcod .contentBoxcod .buycod, .cardds .contentBoxds .buyds {
+    position: relative;
+    top: 100px;
+    opacity: 0;
+    padding: 10px 30px;
+    margin-top: 15px;
+    color: #000000;
+    text-decoration: none;
+    background: #015f85;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.card:hover .contentBox .buy, .cardfc:hover .contentBoxfc .buyfc, .cardcod:hover .contentBoxcod .buycod, .cardds:hover .contentBoxds .buyds {
+    top: 0;
+    opacity: 1;
+}
+
+.mouse, .mousefc, .mousecod, .mouseds {
+    height: auto;
+    width: auto;
+}
