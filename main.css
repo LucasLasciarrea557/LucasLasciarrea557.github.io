@@ -364,7 +364,8 @@ footer .txt13 {
 
 /* Estilos comunes para todas las tarjetas */
 
-.card, .cardfc, .cardcod, .cardds {
+/* Clases comunes */
+.card {
     position: absolute;
     width: 8%;
     height: 270px;
@@ -375,11 +376,113 @@ footer .txt13 {
     z-index: -1;
 }
 
-.card {
+.card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    width: 300%;
+    height: 100%;
+    background: #015f85;
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+
+.card:hover::before {
+    top: -70%;
+    transform: skewY(360deg);
+}
+
+.card::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 6em;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.card .imgBox {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+}
+
+.card .imgBox img {
+    max-width: 90%;
+    max-height: 90%;
+    transition: .5s;
+    border: 2px solid #1e97d4;
+    border-radius: 20px;
+}
+
+.card:hover .imgBox img {
+    max-width: 80%;
+}
+
+.card .contentBox {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+    text-align: center;
+}
+
+.card .contentBox h3 {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card .contentBox .price {
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card .contentBox .buy {
+    position: relative;
+    top: 100px;
+    opacity: 0;
+    padding: 10px 30px;
+    margin-top: 15px;
+    color: #000000;
+    text-decoration: none;
+    background: #015f85;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.card:hover .contentBox .buy {
+    top: 0;
+    opacity: 1;
+}
+
+.mouse {
+    height: auto;
+    width: auto;
+}
+
+/* Clases específicas */
+.cardgt {
     left: 55%;
     top: 20%;
 }
-
 .cardfc {
     left: 63.5%;
     top: 20%;
@@ -395,104 +498,7 @@ footer .txt13 {
     top: 54%;
 }
 
-.card::before, .cardfc::before, .cardcod::before, .cardds::before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    width: 300%;
-    height: 100%;
-    background: #015f85;
-    transform: skewY(345deg);
-    transition: 0.5s;
-}
-
-.card:hover::before, .cardfc:hover::before, .cardcod:hover::before, .cardds:hover::before {
-    top: -70%;
-    transform: skewY(360deg);
-}
-
-.card::after, .cardfc::after, .cardcod::after, .cardds::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    font-weight: 600;
-    font-size: 6em;
-    color: rgba(0, 0, 0, 0.1);
-}
-
-.card .imgBox, .cardfc .imgBoxfc, .cardcod .imgBoxcod, .cardds .imgBoxds {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
-    z-index: 1;
-}
-
-.card .imgBox img, .cardfc .imgBoxfc img, .cardcod .imgBoxcod img, .cardds .imgBoxds img {
-    max-width: 90%;
-    max-height: 90%;
-    transition: .5s;
-    border: 2px solid #1e97d4;
-    border-radius: 20px;
-}
-
-.card:hover .imgBox img, .cardfc:hover .imgBoxfc img, .cardcod:hover .imgBoxcod img, .cardds:hover .imgBoxds img {
-    max-width: 80%;
-}
-
-.card .contentBox, .cardfc .contentBoxfc, .cardcod .contentBoxcod, .cardds .contentBoxds {
-    position: relative;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    z-index: 2;
-    text-align: center;
-}
-
-.card .contentBox h3, .cardfc .contentBoxfc h3, .cardcod .contentBoxcod h3, .cardds .contentBoxds h3 {
-    font-size: 18px;
-    color: white;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.card .contentBox .price, .cardfc .contentBoxfc .pricefc, .cardcod .contentBoxcod .pricecod, .cardds .contentBoxds .priceds {
-    font-size: 24px;
-    color: white;
-    font-weight: 700;
-    letter-spacing: 1px;
-    max-width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.card .contentBox .buy, .cardfc .contentBoxfc .buyfc, .cardcod .contentBoxcod .buycod, .cardds .contentBoxds .buyds {
-    position: relative;
-    top: 100px;
-    opacity: 0;
-    padding: 10px 30px;
-    margin-top: 15px;
-    color: #000000;
-    text-decoration: none;
-    background: #015f85;
-    border-radius: 30px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: 0.5s;
-}
-
-.card:hover .contentBox .buy, .cardfc:hover .contentBoxfc .buyfc, .cardcod:hover .contentBoxcod .buycod, .cardds:hover .contentBoxds .buyds {
-    top: 0;
-    opacity: 1;
-}
-
-.mouse, .mousefc, .mousecod, .mouseds {
-    height: auto;
-    width: auto;
+.cardmc {
+    left: 63.5%;
+    top: 54%;
 }
